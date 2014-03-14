@@ -1,0 +1,6 @@
+c:\users\andrebaltieri\documents\visual studio 2013\Projects\DevStoreApp\DevStoreApp\bin\DevStoreApp.dll.config
+c:\users\andrebaltieri\documents\visual studio 2013\Projects\DevStoreApp\DevStoreApp\bin\DevStoreApp.dll
+c:\users\andrebaltieri\documents\visual studio 2013\Projects\DevStoreApp\DevStoreApp\bin\DevStoreApp.pdb
+c:\users\andrebaltieri\documents\visual studio 2013\Projects\DevStoreApp\DevStoreApp\obj\Debug\DevStoreApp.csprojResolveAssemblyReference.cache
+c:\users\andrebaltieri\documents\visual studio 2013\Projects\DevStoreApp\DevStoreApp\obj\Debug\DevStoreApp.dll
+c:\users\andrebaltieri\documents\visual studio 2013\Projects\DevStoreApp\DevStoreApp\obj\Debug\DevStoreApp.pdb
