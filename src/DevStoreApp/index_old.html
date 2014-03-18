@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <div ng-controller="MyController">
+        <h1>{{ title }}</h1>
+        <ul ng-repeat="product in products">
+            <li>
+                <a href="javascript:void(0)" ng-click="selectProduct(product.id)">{{ product.title }}</a> -
+                <a href="javascript:void(0)" ng-click="deleteProduct(product.id)">[X]</a>
+            </li>
+        </ul>
+        <hr />
+        <a href="javascript:void(0)" ng-click="newProduct()">Adicionar Novo Produto</a>
+        <hr />
+        <form name="form1" ng-submit="submit()">
+            Título: <input name="price" ng-model="product.title" type="text">
+            Preço: <input name="title" ng-model="product.price" type="text">
+            <input type="submit" value="Salvar">
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <script>
+        function MyController($scope, $http) {
+            $scope.title = "Testando";
+            $scope.products = [];
+            $scope.product = {
+                id: 0,
+                title: "",
+                price: 0,
+                acquireDate: "",
+                isActive: true,
+                categoryId: 1
+            };
+
+            $http.get('http://devstore-api.azurewebsites.net/api/v1/public/products')
+                .success(function (data, status, headers, config) {
+                    angular.forEach(data, function (product) {
+                        $scope.products.push(product);
+                    });
+                });
+
+            $scope.submit = function () {
+                var data = $scope.product;
+
+                if (data.id == 0) {
+                    $http.post('http://devstore-api.azurewebsites.net/api/v1/public/products', data)
+                    .success(function (result) {
+                        console.log("Salvou");
+                        $scope.products.push(result);
+                    });
+                } else {
+                    $http.put('http://devstore-api.azurewebsites.net/api/v1/public/products', data)
+                    .success(function () {
+                        console.log("Alterou");
+                    });
+                }
+            };
+
+            $scope.selectProduct = function (productId) {
+                angular.forEach($scope.products, function (product) {
+                    if (product.id == productId) {
+                        $scope.product = product;
+                    }
+                });
+            };
+
+            $scope.deleteProduct = function (productId) {
+                $http.delete('http://devstore-api.azurewebsites.net/api/v1/public/products?productId=' + productId)
+                    .success(function () {
+                        console.log("Excluiu");
+                        angular.forEach($scope.products, function (product) {
+                            if (product.id == productId) {
+                                var index = $scope.products.indexOf(product)
+                                $scope.products.splice(index, 1);
+                            }
+                        });
+                    });
+            };
+
+            $scope.newProduct = function () {
+                $scope.product = {
+                    id: 0,
+                    title: "",
+                    price: 0,
+                    acquireDate: "",
+                    isActive: true,
+                    categoryId: 1
+                };
+            }
+        }
+    </script>
+</body>
+</html>
