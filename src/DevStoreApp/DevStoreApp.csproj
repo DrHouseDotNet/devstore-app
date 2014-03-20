@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ADB73314-E478-49D3-8E64-9A3FD7F327ED}</ProjectGuid>
+    <ProjectGuid>{4B7920AE-43C6-4BCC-821C-0C89FDEB57B0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -67,6 +67,8 @@
     <Content Include="content\fonts\ionicons.eot" />
     <Content Include="content\fonts\ionicons.ttf" />
     <Content Include="content\fonts\ionicons.woff" />
+    <Content Include="content\img\credit\Thumbs.db" />
+    <Content Include="content\css\datatables\images\Thumbs.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,6 +77,29 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\CategoryController.js" />
+    <Content Include="app\controllers\HomeController.js" />
+    <Content Include="app\controllers\ShoppingCartController.js" />
+    <Content Include="app\controllers\ProductController.js" />
+    <Content Include="app\routes.js" />
+    <Content Include="app\views\cart\index.html" />
+    <Content Include="app\views\category\index.html" />
+    <Content Include="app\views\home\index.html" />
+    <Content Include="app\views\product\details.html" />
+    <Content Include="app\views\product\index.html" />
+    <Content Include="content\css\datatables\dataTables.bootstrap.css" />
+    <Content Include="content\css\datatables\images\sort_asc.png" />
+    <Content Include="content\css\datatables\images\sort_asc_disabled.png" />
+    <Content Include="content\css\datatables\images\sort_both.png" />
+    <Content Include="content\css\datatables\images\sort_desc.png" />
+    <Content Include="content\css\datatables\images\sort_desc_disabled.png" />
+    <Content Include="content\img\credit\american-express.png" />
+    <Content Include="content\img\credit\cirrus.png" />
+    <Content Include="content\img\credit\mastercard.png" />
+    <Content Include="content\img\credit\mestro.png" />
+    <Content Include="content\img\credit\paypal.png" />
+    <Content Include="content\img\credit\paypal2.png" />
+    <Content Include="content\img\credit\visa.png" />
     <Content Include="content\css\AdminLTE.css" />
     <Content Include="content\css\bootstrap.min.css" />
     <Content Include="content\css\font-awesome.min.css" />
@@ -84,15 +109,14 @@
     <Content Include="content\fonts\ionicons.svg" />
     <Content Include="content\js\app.js" />
     <Content Include="content\js\bootstrap.min.js" />
+    <Content Include="content\js\datatables\dataTables.bootstrap.js" />
+    <Content Include="content\js\datatables\jquery.dataTables.js" />
     <Content Include="index.html" />
     <Content Include="index_old.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -107,9 +131,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1931</DevelopmentServerPort>
+          <DevelopmentServerPort>8581</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1931/</IISUrl>
+          <IISUrl>http://localhost:4794/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

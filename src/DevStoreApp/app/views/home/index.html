@@ -1,0 +1,38 @@
+﻿<section class="content-header">
+    <h1>{{ vm.title }} <small>DevStore</small></h1>
+    <ol class="breadcrumb">
+        <li class="active">Página Inicial</li>
+        <li>{{ vm.title }}</li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-3 pull-right">
+            <input class="form-control" placeholder="Filtrar" ng-model="FilterProductInput" />
+        </div>
+    </div>
+    <div class="clearfix">
+        <br />&nbsp;
+    </div>
+    <div class="row">        
+        <div class="col-lg-3 col-xs-6" ng-repeat="product in vm.products | filter: FilterProductInput">
+            <div class="small-box bg-blue">
+                <div class="inner">
+                    <h3>
+                        {{ product.price | currency:"R$ " }}
+                    </h3>
+                    <h4>
+                        {{ product.title }}
+                    </h4>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-ios7-cart-outline"></i>
+                </div>
+                <a ng-href="#/produtos/{{ product.id }}" class="small-box-footer">
+                    Detalhes <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

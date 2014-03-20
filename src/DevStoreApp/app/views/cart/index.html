@@ -1,0 +1,43 @@
+﻿<section class="content-header">
+    <h1>Meu Carrinho <small>DevStore</small></h1>
+    <ol class="breadcrumb">
+        <li><a href="#/">Home</a></li>
+        <li class="active">Meu Carrinho</li>
+    </ol>
+</section>
+
+<section class="content invoice">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="page-header">
+                <i class="fa fa-shopping-cart"></i> {{ $rootScope.shoppingCartItems.length }}
+                <small class="pull-right">{{ vm.product.category.title }}</small>
+            </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-center col-md-1">Qtd</th>
+                        <th class="text-center">Produto</th>
+                        <th class="text-center">Preço</th>
+                        <th class="text-center">Sub-Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in vm.items">
+                        <td class="text-center"><input class="form-control" ng-model="item.quantity" /></td>
+                        <td><a ng-href="#/produtos/{{ item.id }}">{{ item.title }}</a></td>
+                        <td class="text-center">{{ item.price | currency:"R$ " }}</td>
+                        <td class="text-center">{{ item.price * item.quantity | currency:"R$ " }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <h2 class="pull-right">Total: {{ vm.total() | currency:"R$ " }}</h2>
+        </div>
+    </div>
+</section>

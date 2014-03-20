@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStoreApp", "DevStoreApp\DevStoreApp.csproj", "{ADB73314-E478-49D3-8E64-9A3FD7F327ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStoreApp", "DevStoreApp\DevStoreApp.csproj", "{4B7920AE-43C6-4BCC-821C-0C89FDEB57B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ADB73314-E478-49D3-8E64-9A3FD7F327ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADB73314-E478-49D3-8E64-9A3FD7F327ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADB73314-E478-49D3-8E64-9A3FD7F327ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADB73314-E478-49D3-8E64-9A3FD7F327ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7920AE-43C6-4BCC-821C-0C89FDEB57B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7920AE-43C6-4BCC-821C-0C89FDEB57B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7920AE-43C6-4BCC-821C-0C89FDEB57B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7920AE-43C6-4BCC-821C-0C89FDEB57B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

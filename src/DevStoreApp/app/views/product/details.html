@@ -1,0 +1,75 @@
+﻿<section class="content-header">
+    <h1>Detalhes do Produto <small>DevStore</small></h1>
+    <ol class="breadcrumb">
+        <li><a href="#/">Home</a></li>
+        <li class="active"><a href="#/produtos">Produtos</a></li>
+        <li class="active">{{ vm.product.title }}</li>
+    </ol>
+</section>
+
+<section class="content invoice">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="page-header">
+                <i class="fa fa-globe"></i> {{ vm.product.title }}
+                <small class="pull-right">{{ vm.product.category.title }}</small>
+            </h2>
+        </div>
+    </div>
+
+    <div class="row invoice-info">
+        <div class="col-sm-4 invoice-col">
+            <strong>Título:</strong> {{ vm.product.title }}<br />
+            <strong>Data de Entrada:</strong> {{ vm.product.acquireDate | date:'dd/MM/yyyy' }}<br />
+            <strong>Categoria:</strong> {{ vm.product.category.title }}<br />
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-xs-6">
+            <p class="lead">Meios de Pagamento:</p>
+            <img src="content/img/credit/visa.png" alt="Visa" />
+            <img src="content/img/credit/mastercard.png" alt="Mastercard" />
+            <img src="content/img/credit/american-express.png" alt="American Express" />
+            <img src="content/img/credit/paypal2.png" alt="Paypal" />
+            <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
+                Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+            </p>
+
+            <a href="javascript:void(0)" class="btn btn-success" ng-click="AddProductToCart()"><i class="fa fa-shopping-cart"></i> Adicionar ao Carrinho</a>
+        </div>
+        <div class="col-xs-6">
+            <p class="lead">Parcelamento</p>
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <th style="width:50%">10x</th>
+                        <td>1.2%</td>
+                    </tr>
+                    <tr>
+                        <th style="width:50%">11x</th>
+                        <td>1.3%</td>
+                    </tr>
+                    <tr>
+                        <th style="width:50%">12x</th>
+                        <td>1.4%</td>
+                    </tr>
+                    <tr>
+                        <th style="width:50%">13x</th>
+                        <td>1.5%</td>
+                    </tr>
+                    <tr>
+                        <th style="width:50%">14x</th>
+                        <td>1.6%</td>
+                    </tr>
+                    <tr>
+                        <th style="width:50%">15x</th>
+                        <td>1.7%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
