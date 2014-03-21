@@ -68,7 +68,6 @@
     <Content Include="content\fonts\ionicons.ttf" />
     <Content Include="content\fonts\ionicons.woff" />
     <Content Include="content\img\credit\Thumbs.db" />
-    <Content Include="content\css\datatables\images\Thumbs.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -87,12 +86,6 @@
     <Content Include="app\views\home\index.html" />
     <Content Include="app\views\product\details.html" />
     <Content Include="app\views\product\index.html" />
-    <Content Include="content\css\datatables\dataTables.bootstrap.css" />
-    <Content Include="content\css\datatables\images\sort_asc.png" />
-    <Content Include="content\css\datatables\images\sort_asc_disabled.png" />
-    <Content Include="content\css\datatables\images\sort_both.png" />
-    <Content Include="content\css\datatables\images\sort_desc.png" />
-    <Content Include="content\css\datatables\images\sort_desc_disabled.png" />
     <Content Include="content\img\credit\american-express.png" />
     <Content Include="content\img\credit\cirrus.png" />
     <Content Include="content\img\credit\mastercard.png" />
@@ -109,8 +102,6 @@
     <Content Include="content\fonts\ionicons.svg" />
     <Content Include="content\js\app.js" />
     <Content Include="content\js\bootstrap.min.js" />
-    <Content Include="content\js\datatables\dataTables.bootstrap.js" />
-    <Content Include="content\js\datatables\jquery.dataTables.js" />
     <Content Include="index.html" />
     <Content Include="index_old.html" />
     <Content Include="Web.config" />
