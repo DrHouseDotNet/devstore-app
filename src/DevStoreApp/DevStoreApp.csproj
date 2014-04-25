@@ -48,6 +48,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.Common">
+      <HintPath>..\packages\System.Web.Http.Common.4.0.20126.16343\lib\net40\System.Web.Http.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -68,6 +71,9 @@
     <Content Include="content\fonts\ionicons.ttf" />
     <Content Include="content\fonts\ionicons.woff" />
     <Content Include="content\img\credit\Thumbs.db" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\devstore-website - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\devstore-website - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

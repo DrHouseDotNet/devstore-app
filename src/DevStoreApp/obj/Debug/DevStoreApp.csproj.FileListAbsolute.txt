@@ -8,3 +8,11 @@ C:\development\repository\andrebaltieri\pessoal\devstore-app\src\DevStoreApp\bin
 C:\development\repository\andrebaltieri\pessoal\devstore-app\src\DevStoreApp\bin\DevStoreApp.pdb
 C:\development\repository\andrebaltieri\pessoal\devstore-app\src\DevStoreApp\obj\Debug\DevStoreApp.dll
 C:\development\repository\andrebaltieri\pessoal\devstore-app\src\DevStoreApp\obj\Debug\DevStoreApp.pdb
+C:\development\repository\andrebaltieri\devstore-app\src\DevStoreApp\bin\DevStoreApp.dll.config
+C:\development\repository\andrebaltieri\devstore-app\src\DevStoreApp\bin\DevStoreApp.dll
+C:\development\repository\andrebaltieri\devstore-app\src\DevStoreApp\bin\DevStoreApp.pdb
+C:\development\repository\andrebaltieri\devstore-app\src\DevStoreApp\bin\System.Web.Http.Common.dll
+C:\development\repository\andrebaltieri\devstore-app\src\DevStoreApp\bin\System.Web.Http.Common.xml
+C:\development\repository\andrebaltieri\devstore-app\src\DevStoreApp\obj\Debug\DevStoreApp.csprojResolveAssemblyReference.cache
+C:\development\repository\andrebaltieri\devstore-app\src\DevStoreApp\obj\Debug\DevStoreApp.dll
+C:\development\repository\andrebaltieri\devstore-app\src\DevStoreApp\obj\Debug\DevStoreApp.pdb
